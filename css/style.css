@@ -1,6 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* HEADER */
 
 /* SIDE BAR */
+
+/* BODY */
+body {
+  width: 100vw;
+}
 
 /* CONTENT */
 
