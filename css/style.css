@@ -79,6 +79,10 @@ body > div {
   z-index: 2; /* Bring to front */
   position: absolute; /* Position absolutely within the parent div */
 }
+/* --------------------- fork shape 2 ------------------------ */
+.shape-2 {
+  background: #e97676; /* Light red for second shape container */
+}
 
 /* FOOTER */
 
