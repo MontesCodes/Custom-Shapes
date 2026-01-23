@@ -95,6 +95,8 @@ body > div {
 .shape-2 div span {
   /* Child spans inside shape-2 */
   width: 100%; /* Full width */
+  height: 7rem; /*112px*/
+  background: #e97676; /* Light red background */
 }
 
 /* FOOTER */
