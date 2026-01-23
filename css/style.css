@@ -115,6 +115,12 @@ body > div {
   bottom: 0; /* Align to bottom */
   left: calc(50% - 0-0.5rem); /* Center horizontally 8px */
 }
+/* --------------------- Skull shape 3 ------------------------ */
+.shape-3 {
+  /* Third shape container */
+  background: #191919; /* Dark gray for third shape container */
+  flex-direction: column; /* Stack child divs vertically */
+}
 /* FOOTER */
 
 /* FORMS */
