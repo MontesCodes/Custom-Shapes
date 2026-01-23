@@ -98,12 +98,22 @@ body > div {
   height: 7rem; /*112px*/
   background: #e97676; /* Light red background */
   transform: translateY(-0.5rem); /* Shift upwards by 8px */
-  border-radius: 1rem; /* Rounded corners 16px */
+  border-radius: 9rem; /* Rounded corners 16px */
   margin-top: -3rem; /* Shift upwards by 48px */
 }
 .shape-2 div span:nth-child(odd) {
   /* Odd child spans */
   background: #060f55; /* Dark blue for odd spans */
+}
+.shape-2::before {
+  /* Pseudo-element for additional decoration */
+  content: ''; /* Empty content for pseudo-element */
+  width: 1rem; /*16px*/
+  height: 144px; /*144px*/
+  background: #060f55; /* Dark blue for pseudo-element */
+  position: absolute; /* Position absolutely within the parent div */
+  bottom: 0; /* Align to bottom */
+  left: calc(50% - 0-0.5rem); /* Center horizontally 8px */
 }
 /* FOOTER */
 
