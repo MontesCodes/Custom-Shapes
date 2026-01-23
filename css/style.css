@@ -1,7 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 /* HEADER */
 
@@ -9,44 +9,50 @@
 
 /* BODY */
 body {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 0.3rem;
+  /* Body styles */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  display: grid; /* Use CSS Grid layout */
+  grid-template-columns: repeat(5, 1fr); /* Five equal columns */
+  gap: 0.3rem; /* Gap between grid items */
 }
 
 body > div {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #333;
+  /* Styles for each shape container */
+  position: relative; /* Position relative for absolute positioning of child elements */
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background: #333; /* Dark background for shape containers */
 }
 
 /* CONTENT */
 /* Media Queries */
 @media screen and (max-width: 992px) {
+  /* Tablets and small desktops */
   body {
-    grid-template-columns: repeat(3, 1fr);
+    /* Adjust grid layout for smaller screens */
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
   }
 }
 
 @media screen and (max-width: 700px) {
+  /* Large mobile devices */
   body {
-    grid-template-columns: 1fr 1fr;
+    /* Adjust grid layout for medium screens */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) /* Mobile Devices */ {
   body {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Single column layout */
   }
 }
 
 /* ---------------------shape 1 ------------------------ */
 .shape-1 {
-  background: #6592cf;
+  background: #6592cf; /* Lighter blue for first shape container */
 }
 .shape-1 span:nth-child(1) {
   width: 12rem; /*192px*/
@@ -55,6 +61,7 @@ body > div {
   position: absolute; /* Position absolutely within the parent div */
 }
 .shape-1 span:nth-child(2) {
+  /* Second child span */
   width: 10rem; /*160px*/
   height: 10rem; /*160px*/
   border-radius: 50%; /* Make it a circle */
@@ -63,6 +70,7 @@ body > div {
   z-index: 1;
 }
 .shape-1 span:nth-child(3) {
+  /* Third child span */
   width: 2rem; /*32px*/
   height: 2rem; /*32px*/
   border-radius: 50%; /* Make it a circle */
