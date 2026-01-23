@@ -97,6 +97,9 @@ body > div {
   width: 100%; /* Full width */
   height: 7rem; /*112px*/
   background: #e97676; /* Light red background */
+  transform: translateY(-0.5rem); /* Shift upwards by 8px */
+  border-radius: 1rem; /* Rounded corners 16px */
+  margin-top: -3rem; /* Shift upwards by 48px */
 }
 .shape-2 div span:nth-child(odd) {
   /* Odd child spans */
