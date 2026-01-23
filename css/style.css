@@ -81,9 +81,11 @@ body > div {
 }
 /* --------------------- fork shape 2 ------------------------ */
 .shape-2 {
+  /* Second shape container */
   background: #e97676; /* Light red for second shape container */
 }
 .shape-2 div {
+  /* Inner div to hold spans */
   width: 8rem; /*128px*/
   height: 10rem; /*160px*/
   background-color: #060f55; /* Dark blue for second shape */
