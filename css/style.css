@@ -98,7 +98,10 @@ body > div {
   height: 7rem; /*112px*/
   background: #e97676; /* Light red background */
 }
-
+.shape-2 div span:nth-child(odd) {
+  /* Odd child spans */
+  background: #060f55; /* Dark blue for odd spans */
+}
 /* FOOTER */
 
 /* FORMS */
