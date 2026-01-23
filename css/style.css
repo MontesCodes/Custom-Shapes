@@ -83,6 +83,17 @@ body > div {
 .shape-2 {
   background: #e97676; /* Light red for second shape container */
 }
+.shape-2 div {
+  width: 8rem; /*128px*/
+  height: 10rem; /*160px*/
+  background-color: #060f55; /* Dark blue for second shape */
+  border-radius: 0 0 4rem 4rem; /* Rounded bottom corners 64px */
+  display: flex; /* Use Flexbox for centering */
+}
+.shape-2 div span {
+  /* Child spans inside shape-2 */
+  width: 100%; /* Full width */
+}
 
 /* FOOTER */
 
