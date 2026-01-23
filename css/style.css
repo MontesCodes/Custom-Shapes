@@ -121,6 +121,12 @@ body > div {
   background: #191919; /* Dark gray for third shape container */
   flex-direction: column; /* Stack child divs vertically */
 }
+.shape-3 div:first-child {
+  /* First child div for skull eyes */
+  width: 8rem; /*128px*/
+  height: 7rem; /*112px*/
+  background: #4f77ff; /* Blue for skull head */
+}
 /* FOOTER */
 
 /* FORMS */
