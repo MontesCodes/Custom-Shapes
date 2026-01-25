@@ -168,6 +168,10 @@ body > div {
   border-radius: 0.4rem; /*6.4px*/
 }
 /* --------------------- Eye shape 4 ------------------------ */
+.shape-4 {
+  /* Fourth shape container */
+  background: #0b2429; /* Dark teal for fourth shape container */
+}
 .shape-4 span:nth-child(1) {
   /* targeting first span for eye pupil */
   width: 8rem; /*128px*/
