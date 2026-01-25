@@ -150,6 +150,7 @@ body > div {
   z-index: 1; /* Bring to front */
 }
 .shape-3 div:last-child {
+  /* Last child div for skull jaw */
   width: 5rem; /*80px*/
   height: 2.5rem; /*40px*/
   background: #4f77ff; /* Blue for skull jaw */
@@ -157,6 +158,14 @@ body > div {
   display: flex; /* Use Flexbox for centering */
   justify-content: center; /* Center horizontally */
   gap: 0.4rem; /* Gap between teeth 6.4px */
+}
+.shape-3 div:last-child span {
+  /* targeting div spans inside the last child div for skull teeth */
+  background-color: #191919; /* Dark gray for teeth */
+  width: 0.6rem; /*9.6px*/
+  height: 1rem; /*16px*/
+  margin-top: 1.8rem; /* Shift downwards by 28.8px */
+  border-radius: 0.4rem; /*6.4px*/
 }
 
 /* FOOTER */
