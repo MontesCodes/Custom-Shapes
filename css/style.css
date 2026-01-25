@@ -126,7 +126,39 @@ body > div {
   width: 8rem; /*128px*/
   height: 7rem; /*112px*/
   background: #4f77ff; /* Blue for skull head */
+  display: flex; /* Use Flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  gap: 1rem; /* Gap between eyes 16px */
+  border-radius: 4rem 4rem 1rem 1rem; /* Rounded top corners 64px, bottom corners 16px */
+  position: relative; /* Position relative for absolute positioning of child spans */
 }
+.shape-3 div:first-child span {
+  /* targeting div spans inside the first child div for skull eye */
+  width: 2.5rem; /*40px*/
+  height: 2.5rem; /*40px*/
+  border-radius: 50%; /* Make it a circle */
+  background: #191919; /* Dark gray for eyes */
+  margin-top: 2.7rem; /* Shift downwards by 43.2px */
+}
+.shape-3 div:first-child span:nth-child(2) {
+  /* targeting div second span inside the first child div for skull eye */
+  width: 1.4rem; /*22.4px*/
+  height: 1.4rem; /*22.4px*/
+  position: absolute; /* Position absolutely within the parent div */
+  bottom: -0.6rem; /* Shift downwards by 9.6px */
+  z-index: 1; /* Bring to front */
+}
+.shape-3 div:last-child {
+  width: 5rem; /*80px*/
+  height: 2.5rem; /*40px*/
+  background: #4f77ff; /* Blue for skull jaw */
+  border-radius: 0 0 1.4rem 1.4rem; /* Rounded bottom corners 22.4px */
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  gap: 0.4rem; /* Gap between teeth 6.4px */
+}
+
 /* FOOTER */
 
 /* FORMS */
