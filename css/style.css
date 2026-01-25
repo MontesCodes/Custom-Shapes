@@ -209,6 +209,13 @@ body > div {
   border-radius: 50%; /* Make it a circle */
   border: 0.8rem solid #0b2429; /* Dark teal border 12.8px */
 }
+.shape-4 span:nth-child(3) {
+  /* targeting third span for eye pupil */
+  width: 2rem; /*32px*/
+  height: 32px; /*32px*/
+  background: #0b2429; /* Dark teal for eye pupil */
+  position: absolute; /* Position absolutely within the parent div */
+}
 /* FOOTER */
 
 /* FORMS */
