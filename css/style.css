@@ -192,6 +192,14 @@ body > div {
   position: absolute; /* Position absolutely within the parent span */
   transform: rotate(45deg); /* Rotate by 45 degrees */
 }
+.shape-4 span:nth-child(1)::before {
+  /* Targeting before pseudo-element */
+  left: -0.8rem; /* Shift left by 12.8px */
+}
+.shape-4 span:nth-child(1)::after {
+  /* Targeting after pseudo-element */
+  right: -0.8rem; /* Shift right by 12.8px */
+}
 
 /* FOOTER */
 
