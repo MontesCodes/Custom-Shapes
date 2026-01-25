@@ -200,7 +200,15 @@ body > div {
   /* Targeting after pseudo-element */
   right: -0.8rem; /* Shift right by 12.8px */
 }
-
+.shape-4 span:nth-child(2) {
+  /* targeting second span for eye iris */
+  width: 7rem; /*112px*/
+  height: 7rem; /*112px*/
+  background: #f3ac3c; /* Yellow for eye iris */
+  position: absolute; /* Position absolutely within the parent div */
+  border-radius: 50%; /* Make it a circle */
+  border: 0.8rem solid #0b2429; /* Dark teal border 12.8px */
+}
 /* FOOTER */
 
 /* FORMS */
