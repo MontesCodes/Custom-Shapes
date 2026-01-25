@@ -168,6 +168,16 @@ body > div {
   border-radius: 0.4rem; /*6.4px*/
 }
 /* --------------------- Eye shape 4 ------------------------ */
+.shape-4 span:nth-child(1) {
+  /* targeting first span for eye pupil */
+  width: 8rem; /*128px*/
+  height: 8rem; /*128px*/
+  background: #998235; /* Brown for eye sclera */
+  border-radius: 50%; /* Make it a circle */
+  display: flex; /* Use Flexbox for centering */
+  align-items: center; /* Center vertically */
+  position: relative; /* Position relative for absolute positioning of child spans */
+}
 
 /* FOOTER */
 
