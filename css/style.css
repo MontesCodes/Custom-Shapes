@@ -182,6 +182,16 @@ body > div {
   align-items: center; /* Center vertically */
   position: relative; /* Position relative for absolute positioning of child spans */
 }
+.shape-4 span:nth-child(1)::before,
+.shape-4 span:nth-child(1)::after {
+  /* Pseudo-elements for eye highlights, targeting first span */
+  content: ''; /* Empty content for pseudo-elements */
+  width: 4rem; /*64px*/
+  height: 4rem; /*64px*/
+  background: #998235; /* Brown for eye highlights */
+  position: absolute; /* Position absolutely within the parent span */
+  transform: rotate(45deg); /* Rotate by 45 degrees */
+}
 
 /* FOOTER */
 
