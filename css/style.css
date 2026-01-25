@@ -215,6 +215,7 @@ body > div {
   height: 32px; /*32px*/
   background: #0b2429; /* Dark teal for eye pupil */
   position: absolute; /* Position absolutely within the parent div */
+  border-radius: 50%; /* Make it a circle */
 }
 /* FOOTER */
 
