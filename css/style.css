@@ -256,6 +256,12 @@ body > div {
   /* Fourth step by targeting fourth child span */
   width: 6.6rem; /*105.6px*/
 }
+/* --------------------- bell shape 6 ------------------------ */
+.shape-6 {
+  /* Sixth shape container to targeting the background to stack spans vertically */
+  background: #312222; /* Dark brown for sixth shape container */
+  flex-direction: column; /* Stack child spans vertically */
+}
 
 /* FOOTER */
 
