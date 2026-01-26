@@ -217,6 +217,18 @@ body > div {
   position: absolute; /* Position absolutely within the parent div */
   border-radius: 50%; /* Make it a circle */
 }
+/* --------------------- staircase shape 5 ------------------------ */
+.shape-5 div {
+  width: 8rem; /*128px*/
+  height: 12rem; /*192px*/
+  background: #4f77ff; /* Blue for staircase background */
+  border-radius: 4rem 4rem 0 0; /* Rounded top-left and bottom-left corners 64px */
+  display: flex; /* Use Flexbox for centering */
+  flex-direction: column; /* Stack child spans vertically */
+  gap: 0.3rem; /* Gap between steps 4.8px */
+  position: relative; /* Position relative for absolute positioning of child spans */
+}
+
 /* FOOTER */
 
 /* FORMS */
