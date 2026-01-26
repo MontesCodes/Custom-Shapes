@@ -219,6 +219,7 @@ body > div {
 }
 /* --------------------- staircase shape 5 ------------------------ */
 .shape-5 div {
+  /* Inner div to hold spans */
   width: 8rem; /*128px*/
   height: 12rem; /*192px*/
   background: #4f77ff; /* Blue for staircase background */
@@ -227,6 +228,33 @@ body > div {
   flex-direction: column; /* Stack child spans vertically */
   gap: 0.3rem; /* Gap between steps 4.8px */
   position: relative; /* Position relative for absolute positioning of child spans */
+}
+.shape-5 div span {
+  /* targeting div spans inside shape-5 for staircase steps */
+  background: #191919; /* Dark gray for staircase steps */
+  height: 1rem; /*16px*/
+  position: absolute; /* Position absolutely within the parent div */
+  bottom: 0; /* Align to bottom */
+  right: 0; /* Align to right */
+}
+.shape-5 div span:nth-child(1) {
+  /* First step by targeting first child span */
+  width: 2.4rem; /*38.4px*/
+  margin-bottom: 3.3rem; /*52.8px*/
+}
+.shape-5 div span:nth-child(2) {
+  /* Second step by targeting second child span */
+  width: 3.8rem; /*60.8px*/
+  margin-bottom: 2.2rem; /*35.2px*/
+}
+.shape-5 div span:nth-child(3) {
+  /* Third step by targeting third child span */
+  width: 5.4rem; /*86.4px*/
+  margin-bottom: 1.1rem; /*17.6px*/
+}
+.shape-5 div span:nth-child(4) {
+  /* Fourth step by targeting fourth child span */
+  width: 6.6rem; /*105.6px*/
 }
 
 /* FOOTER */
