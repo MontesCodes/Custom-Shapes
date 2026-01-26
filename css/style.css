@@ -10,11 +10,11 @@
 /* BODY */
 body {
   /* Body styles */
-  width: 100vw; /* Full viewport width */
+  width: 100vw; /* Full viewport width  */
   height: 100vh; /* Full viewport height */
   display: grid; /* Use CSS Grid layout */
   grid-template-columns: repeat(5, 1fr); /* Five equal columns */
-  gap: 0.3rem; /* Gap between grid items */
+  gap: 0.3rem; /* Gap between grid items 4.8px based on 16px = 1rem */
 }
 
 body > div {
@@ -55,15 +55,15 @@ body > div {
   background: #6592cf; /* Lighter blue for first shape container */
 }
 .shape-1 span:nth-child(1) {
-  width: 12rem; /*192px*/
-  height: 6rem; /*96px*/
+  width: 12rem; /*192px based on 16px = 1rem */
+  height: 6rem; /*96px based on 16px = 1rem */
   background: #243d83; /* Darker blue for first shape */
   position: absolute; /* Position absolutely within the parent div */
 }
 .shape-1 span:nth-child(2) {
   /* Second child span */
-  width: 10rem; /*160px*/
-  height: 10rem; /*160px*/
+  width: 10rem; /*160px based on 16px = 1rem */
+  height: 10rem; /*160px based on 16px = 1rem */
   border-radius: 50%; /* Make it a circle */
   background: #243d83; /* Darker blue for first shape */
   border: 2rem solid #6592cf; /* Lighter blue border */
@@ -71,8 +71,8 @@ body > div {
 }
 .shape-1 span:nth-child(3) {
   /* Third child span */
-  width: 2rem; /*32px*/
-  height: 2rem; /*32px*/
+  width: 2rem; /*32px based on 16px = 1rem */
+  height: 2rem; /*32px based on 16px = 1rem */
   border-radius: 50%; /* Make it a circle */
   background: #eeb850; /* Yellow for third shape */
 
@@ -86,20 +86,22 @@ body > div {
 }
 .shape-2 div {
   /* Inner div to hold spans */
-  width: 8rem; /*128px*/
-  height: 10rem; /*160px*/
+  width: 8rem; /*128px based on 16px = 1rem */
+  height: 10rem; /*160px based on 16px = 1rem */
   background-color: #060f55; /* Dark blue for second shape */
-  border-radius: 0 0 4rem 4rem; /* Rounded bottom corners 64px */
+  border-radius: 0 0 4rem 4rem; /* Rounded bottom corners 64px based on 16px = 1rem */
   display: flex; /* Use Flexbox for centering */
 }
 .shape-2 div span {
   /* Child spans inside shape-2 */
   width: 100%; /* Full width */
-  height: 7rem; /*112px*/
+  height: 7rem; /*112px based on 16px = 1rem */
   background: #e97676; /* Light red background */
-  transform: translateY(-0.5rem); /* Shift upwards by 8px */
-  border-radius: 9rem; /* Rounded corners 16px */
-  margin-top: -3rem; /* Shift upwards by 48px */
+  transform: translateY(
+    -0.5rem
+  ); /* Shift upwards by 8px based on 16px = 1rem */
+  border-radius: 9rem; /* Rounded corners 16px based on 16px = 1rem */
+  margin-top: -3rem; /* Shift upwards by 48px based on 16px = 1rem */
 }
 .shape-2 div span:nth-child(odd) {
   /* Odd child spans */
@@ -108,8 +110,8 @@ body > div {
 .shape-2::before {
   /* Pseudo-element for additional decoration */
   content: ''; /* Empty content for pseudo-element */
-  width: 1rem; /*16px*/
-  height: 144px; /*144px*/
+  width: 1rem; /*16px based on 16px = 1rem */
+  height: 144px; /*144px based on 16px = 1rem */
   background: #060f55; /* Dark blue for pseudo-element */
   position: absolute; /* Position absolutely within the parent div */
   bottom: 0; /* Align to bottom */
@@ -123,49 +125,49 @@ body > div {
 }
 .shape-3 div:first-child {
   /* First child div for skull eyes */
-  width: 8rem; /*128px*/
-  height: 7rem; /*112px*/
+  width: 8rem; /*128px based on 16px = 1rem */
+  height: 7rem; /*112px based on 16px = 1rem */
   background: #4f77ff; /* Blue for skull head */
   display: flex; /* Use Flexbox for centering */
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */
-  gap: 1rem; /* Gap between eyes 16px */
-  border-radius: 4rem 4rem 1rem 1rem; /* Rounded top corners 64px, bottom corners 16px */
+  gap: 1rem; /* Gap between eyes 16px based on 16px = 1rem */
+  border-radius: 4rem 4rem 1rem 1rem; /* Rounded top corners 64px, bottom corners 16px based on 16px = 1rem */
   position: relative; /* Position relative for absolute positioning of child spans */
 }
 .shape-3 div:first-child span {
   /* targeting div spans inside the first child div for skull eye */
-  width: 2.5rem; /*40px*/
-  height: 2.5rem; /*40px*/
+  width: 2.5rem; /*40px based on 16px = 1rem */
+  height: 2.5rem; /*40px based on 16px = 1rem */
   border-radius: 50%; /* Make it a circle */
   background: #191919; /* Dark gray for eyes */
-  margin-top: 2.7rem; /* Shift downwards by 43.2px */
+  margin-top: 2.7rem; /* Shift downwards by 43.2px based on 16px = 1rem */
 }
 .shape-3 div:first-child span:nth-child(2) {
   /* targeting div second span inside the first child div for skull eye */
-  width: 1.4rem; /*22.4px*/
-  height: 1.4rem; /*22.4px*/
+  width: 1.4rem; /*22.4px based on 16px = 1rem */
+  height: 1.4rem; /*22.4px based on 16px = 1rem */
   position: absolute; /* Position absolutely within the parent div */
-  bottom: -0.6rem; /* Shift downwards by 9.6px */
+  bottom: -0.6rem; /* Shift downwards by 9.6px based on 16px = 1rem */
   z-index: 1; /* Bring to front */
 }
 .shape-3 div:last-child {
   /* Last child div for skull jaw */
-  width: 5rem; /*80px*/
-  height: 2.5rem; /*40px*/
+  width: 5rem; /*80px based on 16px = 1rem */
+  height: 2.5rem; /*40px based on 16px = 1rem */
   background: #4f77ff; /* Blue for skull jaw */
-  border-radius: 0 0 1.4rem 1.4rem; /* Rounded bottom corners 22.4px */
+  border-radius: 0 0 1.4rem 1.4rem; /* Rounded bottom corners 22.4px based on 16px = 1rem */
   display: flex; /* Use Flexbox for centering */
   justify-content: center; /* Center horizontally */
-  gap: 0.4rem; /* Gap between teeth 6.4px */
+  gap: 0.4rem; /* Gap between teeth 6.4px based on 16px = 1rem */
 }
 .shape-3 div:last-child span {
   /* targeting div spans inside the last child div for skull teeth */
   background-color: #191919; /* Dark gray for teeth */
-  width: 0.6rem; /*9.6px*/
-  height: 1rem; /*16px*/
-  margin-top: 1.8rem; /* Shift downwards by 28.8px */
-  border-radius: 0.4rem; /*6.4px*/
+  width: 0.6rem; /*9.6px based on 16px = 1rem */
+  height: 1rem; /*16px based on 16px = 1rem */
+  margin-top: 1.8rem; /* Shift downwards by 28.8px based on 16px = 1rem */
+  border-radius: 0.4rem; /*6.4px based on 16px = 1rem */
 }
 /* --------------------- Eye shape 4 ------------------------ */
 .shape-4 {
@@ -174,8 +176,8 @@ body > div {
 }
 .shape-4 span:nth-child(1) {
   /* targeting first span for eye pupil */
-  width: 8rem; /*128px*/
-  height: 8rem; /*128px*/
+  width: 8rem; /*128px based on 16px = 1rem */
+  height: 8rem; /*128px based on 16px = 1rem */
   background: #998235; /* Brown for eye sclera */
   border-radius: 50%; /* Make it a circle */
   display: flex; /* Use Flexbox for centering */
@@ -186,24 +188,24 @@ body > div {
 .shape-4 span:nth-child(1)::after {
   /* Pseudo-elements for eye highlights, targeting first span */
   content: ''; /* Empty content for pseudo-elements */
-  width: 4rem; /*64px*/
-  height: 4rem; /*64px*/
+  width: 4rem; /*64px based on 16px = 1rem */
+  height: 4rem; /*64px based on 16px = 1rem */
   background: #998235; /* Brown for eye highlights */
   position: absolute; /* Position absolutely within the parent span */
   transform: rotate(45deg); /* Rotate by 45 degrees */
 }
 .shape-4 span:nth-child(1)::before {
   /* Targeting before pseudo-element */
-  left: -0.8rem; /* Shift left by 12.8px */
+  left: -0.8rem; /* Shift left by 12.8px based on 16px = 1rem */
 }
 .shape-4 span:nth-child(1)::after {
   /* Targeting after pseudo-element */
-  right: -0.8rem; /* Shift right by 12.8px */
+  right: -0.8rem; /* Shift right by 12.8px based on 16px = 1rem */
 }
 .shape-4 span:nth-child(2) {
   /* targeting second span for eye iris */
-  width: 7rem; /*112px*/
-  height: 7rem; /*112px*/
+  width: 7rem; /*112px based on 16px = 1rem */
+  height: 7rem; /*112px based on 16px = 1rem */
   background: #f3ac3c; /* Yellow for eye iris */
   position: absolute; /* Position absolutely within the parent div */
   border-radius: 50%; /* Make it a circle */
@@ -211,8 +213,8 @@ body > div {
 }
 .shape-4 span:nth-child(3) {
   /* targeting third span for eye pupil */
-  width: 2rem; /*32px*/
-  height: 32px; /*32px*/
+  width: 2rem; /*32px based on 16px = 1rem */
+  height: 2rem; /*32px based on 16px = 1rem */
   background: #0b2429; /* Dark teal for eye pupil */
   position: absolute; /* Position absolutely within the parent div */
   border-radius: 50%; /* Make it a circle */
@@ -220,13 +222,13 @@ body > div {
 /* --------------------- staircase shape 5 ------------------------ */
 .shape-5 div {
   /* Inner div to hold spans */
-  width: 8rem; /*128px*/
-  height: 12rem; /*192px*/
+  width: 8rem; /*128px based on 16px = 1rem */
+  height: 12rem; /*192px based on 16px = 1rem */
   background: #4f77ff; /* Blue for staircase background */
   border-radius: 4rem 4rem 0 0; /* Rounded top-left and bottom-left corners 64px */
   display: flex; /* Use Flexbox for centering */
   flex-direction: column; /* Stack child spans vertically */
-  gap: 0.3rem; /* Gap between steps 4.8px */
+  gap: 0.3rem; /* Gap between steps 4.8px based on 16px = 1rem */
   position: relative; /* Position relative for absolute positioning of child spans */
 }
 .shape-5 div span {
@@ -239,28 +241,38 @@ body > div {
 }
 .shape-5 div span:nth-child(1) {
   /* First step by targeting first child span */
-  width: 2.4rem; /*38.4px*/
-  margin-bottom: 3.3rem; /*52.8px*/
+  width: 2.4rem; /*38.4px based on 16px = 1rem */
+  margin-bottom: 3.3rem; /*52.8px based on 16px = 1rem */
 }
 .shape-5 div span:nth-child(2) {
   /* Second step by targeting second child span */
-  width: 3.8rem; /*60.8px*/
-  margin-bottom: 2.2rem; /*35.2px*/
+  width: 3.8rem; /*60.8px based on 16px = 1rem*/
+  margin-bottom: 2.2rem; /*35.2px based on 16px = 1rem*/
 }
 .shape-5 div span:nth-child(3) {
   /* Third step by targeting third child span */
-  width: 5.4rem; /*86.4px*/
-  margin-bottom: 1.1rem; /*17.6px*/
+  width: 5.4rem; /*86.4px based on 16px = 1rem*/
+  margin-bottom: 1.1rem; /*17.6px based on 16px = 1rem*/
 }
 .shape-5 div span:nth-child(4) {
   /* Fourth step by targeting fourth child span */
-  width: 6.6rem; /*105.6px*/
+  width: 6.6rem; /*105.6px based on 16px = 1rem*/
 }
 /* --------------------- bell shape 6 ------------------------ */
 .shape-6 {
   /* Sixth shape container to targeting the background to stack spans vertically */
   background: #312222; /* Dark brown for sixth shape container */
   flex-direction: column; /* Stack child spans vertically */
+}
+.shape-6 span:nth-child(1) {
+  width: 3rem; /*48px based on 16px = 1rem*/
+}
+.shape-6 span:nth-child(2) {
+  width: 8rem; /*128px based on 16px = 1rem*/
+  height: 8rem; /*128px based on 16px = 1rem*/
+  background: #e08027; /* Orange for bell body */
+  border-radius: 4rem 4rem 1rem 1rem; /* Rounded top corners 64px based on 16px = 1rem, bottom corners 16px based on 16px = 1rem */
+  z-index: 1; /* Bring to front */
 }
 
 /* FOOTER */
