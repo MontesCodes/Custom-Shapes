@@ -293,12 +293,16 @@ body > div {
   background: #293462; /* Dark blue for seventh shape container */
 }
 .shape-7 div {
+  /* targeting the div to center the pumpkin and its facial features */
   width: 10rem; /*160px based on 16px = 1rem*/
   height: 10rem; /*160px based on 16px = 1rem*/
   background-color: #fe5f55; /* Orange for pumpkin body */
   border-radius: 5rem 5rem 3rem 3rem; /* Rounded top corners 80px based on 16px = 1rem, bottom corners 48px based on 16px = 1rem */
   display: grid; /* use Css Grid layout to position face elements */
   grid-template-columns: 1fr 1fr; /* Two equal columns to position face elements */
+  justify-content: center; /* Center horizontally to help with face alignment */
+  align-items: start; /* Align items to the top to alignment pumpkin face */
+  position: relative; /* Position relative for absolute positioning of child spans */
 }
 
 /* FOOTER */
