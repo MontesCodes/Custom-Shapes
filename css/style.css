@@ -265,6 +265,7 @@ body > div {
   flex-direction: column; /* Stack child spans vertically */
 }
 .shape-6 span:nth-child(1) {
+  /* targeting first span for bell clapper */
   width: 3rem; /*48px based on 16px = 1rem*/
   height: 3rem; /* 48px based on 16px = 1rem*/
   background: #efa93b; /* Yellow for bell clapper */
@@ -272,6 +273,7 @@ body > div {
   margin-bottom: -1.2rem; /* Shift upwards by 19.2px based on 16px = 1rem */
 }
 .shape-6 span:nth-child(2) {
+  /* targeting second span for bell body */
   width: 8rem; /*128px based on 16px = 1rem*/
   height: 8rem; /*128px based on 16px = 1rem*/
   background: #e08027; /* Orange for bell body */
