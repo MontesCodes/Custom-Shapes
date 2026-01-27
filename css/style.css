@@ -287,6 +287,11 @@ body > div {
   border-radius: 0 0 2rem 2rem; /* Rounded bottom corners 32px based on 16px = 1rem */
   margin-top: -0.8rem; /* Shift upwards by 12.8px based on 16px = 1rem */
 }
+/* --------------------- pumpkin shape 7 ------------------------ */
+.shape-7 {
+  /* applying background to the seventh shape container */
+  background: #293462; /* Dark blue for seventh shape container */
+}
 
 /* FOOTER */
 
