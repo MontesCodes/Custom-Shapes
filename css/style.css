@@ -380,6 +380,16 @@ body > div {
   border-left-color: #ffffff; /* White left border for tusks */
   transform: rotate(45deg); /* Rotate tusks by 45 degrees */
 }
+.shape-8 div:nth-child(1),
+.shape-8 div:nth-child(3) {
+  /* targeting first and third div for elephant ears to get them to show up*/
+  content: ''; /* Empty content for pseudo-element */
+  position: relative; /* Position relative for absolute positioning of child spans */
+  width: 3rem; /*48px based on 16px = 1rem*/
+  height: 8rem; /*128px based on 16px = 1rem*/
+  background: #1a4341; /* Dark teal for elephant ears */
+  border-radius: 50%; /* Make it a circle for ears */
+}
 
 /* FOOTER */
 
