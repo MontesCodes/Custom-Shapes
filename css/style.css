@@ -358,6 +358,15 @@ body > div {
   background-color: #1a4341; /* Dark teal for elephant eyes */
   border: 0.5rem solid #998235; /* Brown border for elephant eyes 8px based on 16px = 1rem */
 }
+.shape-8 div:nth-child(2)::before {
+  /* targeting center/second div pseudo-element used for eyes for an eyes half open effect on the elephant face */
+  content: ''; /* Empty content for pseudo-element */
+  width: 80%; /*80% of the parent div width */
+  height: 1.2rem; /*19.2px based on 16px = 1rem*/
+  background-color: #1a4341; /* Dark teal for eye half open effect */
+  position: absolute; /* Position absolutely within the parent div */
+  top: 35%; /* Position at 35% from the top */
+}
 /* FOOTER */
 
 /* FORMS */
