@@ -416,6 +416,17 @@ body > div {
   z-index: 3; /* Bring to front */
   border-radius: 2rem 2rem 0 0; /* Rounded top-left and bottom-left corners 32px based on 16px = 1rem */
 }
+/* --------------------- Mountain top gallery shape-9 ------------------------ */
+.shape-9 { /* ninth shape container to targeting the background of main div */
+  background-color: #293462; /* Dark blue for ninth shape container */
+}
+.shape-9 span { /* targeting span inside shape-9 for mountain top gallery */
+  width: 12rem; /*192px based on 16px = 1rem*/
+  height: 12rem; /*192px based on 16px = 1rem*/
+  background: #fff1c1; /* Light yellow for mountain top gallery */
+  border-radius: 50%; /* Make it a circle for mountain top gallery */
+  position: relative; /* Position relative for absolute positioning of child spans */
+}
 
 /* FOOTER */
 
