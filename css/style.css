@@ -311,7 +311,7 @@ body > div {
 }
 .shape-7 div span:nth-child(1),
 .shape-7 div span:nth-child(2) {
-  /* targeting first and second span for pumpkin eyes */
+  /* targeting first and second span for pumpkin hair */
   width: 5rem; /*80px based on 16px = 1rem*/
   height: 5rem; /*80px based on 16px = 1rem*/
   border-radius: 50%; /* Make it a circle for eyes */
@@ -319,10 +319,18 @@ body > div {
 }
 .shape-7 div span:nth-child(3),
 .shape-7 div span:nth-child(4) {
-  /* targeting third and fourth span for pumpkin mouth */
+  /* targeting third and fourth span for pumpkin eyes */
   width: 3rem; /*48px based on 16px = 1rem*/
   height: 3rem; /*48px based on 16px = 1rem*/
   border-radius: 50%; /* Make it a circle for nose */
+}
+.shape-7 div span:nth-child(5) {
+  /* targeting fifth span for pumpkin mouth */
+  width: 2.5rem; /*40px based on 16px = 1rem*/
+  height: 0.5rem; /*8px based on 16px = 1rem*/
+  border-radius: 0.2rem; /*3.2px based on 16px = 1rem*/
+  position: absolute; /* Position absolutely within the parent div */
+  bottom: 1rem; /*16px based on 16px = 1rem*/
 }
 
 /* FOOTER */
