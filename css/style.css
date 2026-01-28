@@ -303,7 +303,7 @@ body > div {
   justify-items: center; /* Center items horizontally */
   align-items: start; /* Align items to the top to alignment pumpkin face */
   position: relative; /* Position relative for absolute positioning of child spans */
-  overflow: hidden; /* Hide overflow to maintain shape */
+  overflow: hidden; Hide overflow to maintain shape
 }
 .shape-7 div span {
   /* targeting div spans inside shape-7 for pumpkin facial features */
@@ -349,7 +349,7 @@ body > div {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   gap: 16px; /* Gap between eyes 16px based on 16px = 1rem */
-}
+  }
 .shape-8 div:nth-child(2) span {
   /* targeting spans inside the center/second div for elephant eyes */
   width: 2rem; /*32px based on 16px = 1rem*/
@@ -388,7 +388,7 @@ body > div {
   height: 8rem; /*128px based on 16px = 1rem*/
   background: #1a4341; /* Dark teal for elephant ears */
   border-radius: 50%; /* Make it a circle for ears */
-}
+  }
 .shape-8 div:nth-child(1)::before,
 .shape-8 div:nth-child(3)::before {
   /* targeting first and third div pseudo-elements for inner elephant ears */
@@ -399,10 +399,22 @@ body > div {
   border-radius: 50%; /* Make it a circle for inner ears */
   position: absolute; /* Position absolutely within the parent div */
   right: 0; /* Align inner ears circle to right */
+  
 }
 .shape-8 div:nth-child(3)::before {
   /* targeting third div pseudo-element for inner elephant ear */
   left: 0; /* Align inner ears circle to left */
+}
+.shape-8::before {
+  /* targeting eighth shape container pseudo-element for elephant trunk */
+  content: ''; /* Empty content for pseudo-element */
+  width: 1.7rem; /*27.2px based on 16px = 1rem*/
+  height: 42%; /*42% of the parent div height */
+  background: #0b2429; /* Darker teal for elephant trunk */
+  position: absolute; /* Position absolutely within the parent div */
+  bottom: 0; /* Align to bottom */
+  z-index: 3; /* Bring to front */
+  border-radius: 2rem 2rem 0 0; /* Rounded top-left and bottom-left corners 32px based on 16px = 1rem */
 }
 
 /* FOOTER */
