@@ -333,7 +333,27 @@ body > div {
   bottom: 1rem; /*16px based on 16px = 1rem*/
 }
 /* --------------------- elephant shape 8 ------------------------ */
-
+.shape-8 {
+  /* eighth shape container to targeting the background to stack divs horizontally */
+  background-color: #998235; /* Brown for elephant face container */
+}
+.shape-8 div:nth-child(2) {
+  /* targeting center/second div for the elephant face */
+  width: 8rem; /*128px based on 16px = 1rem*/
+  height: 8rem; /*128px based on 16px = 1rem*/
+  background-color: #1a4341; /* Dark teal for elephant face */
+  border-radius: 50%; /* Make it a circle */
+  z-index: 2; /* Bring to front */
+  position: relative; /* Position relative for absolute positioning of child spans */
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  gap: 16px; /* Gap between eyes 16px based on 16px = 1rem */
+}
+.shape-8 div:nth-child(2) span {
+  /* targeting spans inside the center/second div for elephant eyes */
+  width: 2rem; /*32px based on 16px = 1rem*/
+}
 /* FOOTER */
 
 /* FORMS */
