@@ -300,7 +300,7 @@ body > div {
   border-radius: 5rem 5rem 3rem 3rem; /* Rounded top corners 80px based on 16px = 1rem, bottom corners 48px based on 16px = 1rem */
   display: grid; /* use Css Grid layout to position face elements */
   grid-template-columns: 1fr 1fr; /* Two equal columns to position face elements */
-  justify-content: center; /* Center horizontally to help with face alignment */
+  justify-items: center; /* Center items horizontally */
   align-items: start; /* Align items to the top to alignment pumpkin face */
   position: relative; /* Position relative for absolute positioning of child spans */
   overflow: hidden; /* Hide overflow to maintain shape */
@@ -316,6 +316,13 @@ body > div {
   height: 5rem; /*80px based on 16px = 1rem*/
   border-radius: 50%; /* Make it a circle for eyes */
   margin-top: -2.4rem; /* Shift upwards by 38.4px based on 16px = 1rem */
+}
+.shape-7 div span:nth-child(3),
+.shape-7 div span:nth-child(4) {
+  /* targeting third and fourth span for pumpkin mouth */
+  width: 3rem; /*48px based on 16px = 1rem*/
+  height: 3rem; /*48px based on 16px = 1rem*/
+  border-radius: 50%; /* Make it a circle for nose */
 }
 
 /* FOOTER */
