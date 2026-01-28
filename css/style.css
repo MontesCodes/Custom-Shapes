@@ -367,6 +367,20 @@ body > div {
   position: absolute; /* Position absolutely within the parent div */
   top: 35%; /* Position at 35% from the top */
 }
+.shape-8 div:nth-child(2)::after {
+  /* targeting center/second div pseudo-element used for elephant tusks */
+  content: ''; /* Empty content for pseudo-element */
+  width: 3.5rem; /*56px based on 16px = 1rem*/
+  height: 3.5rem; /*56px based on 16px = 1rem*/
+  position: absolute; /* Position absolutely within the parent div */
+  bottom: -3rem; /* Shift downwards by 48px based on 16px = 1rem*/
+  border-radius: 50%; /* Make it a circle for tusks */
+  border: 0.8rem solid transparent; /* Transparent border for tusks 12.8px based on 16px = 1rem */
+  border-top-color: #ffffff; /* White top border for tusks */
+  border-left-color: #ffffff; /* White left border for tusks */
+  transform: rotate(45deg); /* Rotate tusks by 45 degrees */
+}
+
 /* FOOTER */
 
 /* FORMS */
