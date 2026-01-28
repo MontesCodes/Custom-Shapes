@@ -353,6 +353,10 @@ body > div {
 .shape-8 div:nth-child(2) span {
   /* targeting spans inside the center/second div for elephant eyes */
   width: 2rem; /*32px based on 16px = 1rem*/
+  height: 2rem; /*32px based on 16px = 1rem*/
+  border-radius: 50%; /* Make it a circle for eyes */
+  background-color: #1a4341; /* Dark teal for elephant eyes */
+  border: 0.5rem solid #998235; /* Brown border for elephant eyes 8px based on 16px = 1rem */
 }
 /* FOOTER */
 
