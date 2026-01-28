@@ -398,7 +398,11 @@ body > div {
   background: #0b2429; /* Darker teal for inner elephant ears */
   border-radius: 50%; /* Make it a circle for inner ears */
   position: absolute; /* Position absolutely within the parent div */
-  right: 0; /* Align to right */
+  right: 0; /* Align inner ears circle to right */
+}
+.shape-8 div:nth-child(3)::before {
+  /* targeting third div pseudo-element for inner elephant ear */
+  left: 0; /* Align inner ears circle to left */
 }
 
 /* FOOTER */
