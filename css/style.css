@@ -449,6 +449,26 @@ body > div {
   transform: rotate(45deg);
 
 }
+/* --------------------- Bee shape-10 ------------------------ */
+.shape-10 { /* targeting shape-10 class for Bee container */
+  background: #998235; /* Dark yellow for bee body */
+  flex-direction: column; /* Arrange bee wings and body stripes vertically */
+}
+.shape-10 div { /* targeting divs inside shape-10 for Bee wings and body container */
+  width: 10rem; /*160px based on 16px = 1rem*/
+  height: 5rem; /*80px based on 16px = 1rem*/
+  display: flex; /* Use flexbox for layout */
+}
+.shape-10 div:first-child span { /* targeting spans inside first div of shape-10 for Bee wings */
+  background: #ffffff; /* White for bee wings */
+  width: 50%; /* 50% of the parent div width */
+  height: 100%; /* 100% of the parent div height */
+  border-radius: 50% 50% 50% 0; /* Rounded corners for bee wings */
+}
+.shape-10 div:first-child span:first-child{ /* targeting first span inside first div of shape-10 for First bee wing */
+  border-radius: 50% 50% 0 50%; /* Rounded corners for first bee wing */
+}
+
 
 /* FOOTER */
 
