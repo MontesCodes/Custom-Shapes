@@ -412,8 +412,8 @@ body > div {
   height: 42%; /*42% of the parent div height */
   background: #0b2429; /* Darker teal for elephant trunk */
   position: absolute; /* Position absolutely within the parent div */
-  bottom: 0; /* Align to bottom */
-  z-index: 3; /* Bring to front */
+  bottom: 1rem; /* moved trunk upwards by 16px based on 16px = 1rem */
+  z-index: 3; /* Bring trunk to front in front of other elements */
   border-radius: 2rem 2rem 0 0; /* Rounded top-left and bottom-left corners 32px based on 16px = 1rem */
 }
 /* --------------------- Mountain top gallery shape-9 ------------------------ */
