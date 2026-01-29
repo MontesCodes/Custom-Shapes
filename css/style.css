@@ -408,11 +408,11 @@ body > div {
 .shape-8::before {
   /* targeting eighth shape container pseudo-element for elephant trunk */
   content: ''; /* Empty content for pseudo-element */
-  width: 1.7rem; /*27.2px based on 16px = 1rem*/
-  height: 42%; /*42% of the parent div height */
+  width: 1.9rem; /*27.2px based on 16px = 1rem*/
+  height: 47%; /*47% of the parent div height */
   background: #0b2429; /* Darker teal for elephant trunk */
   position: absolute; /* Position absolutely within the parent div */
-  bottom: 1rem; /* moved trunk upwards by 16px based on 16px = 1rem */
+  bottom: 0rem; /* Align trunk to bottom */
   z-index: 3; /* Bring trunk to front in front of other elements */
   border-radius: 2rem 2rem 0 0; /* Rounded top-left and bottom-left corners 32px based on 16px = 1rem */
 }
