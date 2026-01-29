@@ -426,6 +426,7 @@ body > div {
   background: #fff1c1; /* Light yellow for mountain top gallery */
   border-radius: 50%; /* Make it a circle for mountain top gallery */
   position: relative; /* Position relative for absolute positioning of child spans */
+  overflow: hidden; /* Hide any overflow from child elements */
 }
 .shape-9 span::before{
   content: ''; /* Empty content for pseudo-element */
