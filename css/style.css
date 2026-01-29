@@ -303,7 +303,7 @@ body > div {
   justify-items: center; /* Center items horizontally */
   align-items: start; /* Align items to the top to alignment pumpkin face */
   position: relative; /* Position relative for absolute positioning of child spans */
-  overflow: hidden; Hide overflow to maintain shape
+  overflow: hidden; /* Hide overflow to maintain shape */
 }
 .shape-7 div span {
   /* targeting div spans inside shape-7 for pumpkin facial features */
@@ -349,7 +349,7 @@ body > div {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   gap: 16px; /* Gap between eyes 16px based on 16px = 1rem */
-  }
+}
 .shape-8 div:nth-child(2) span {
   /* targeting spans inside the center/second div for elephant eyes */
   width: 2rem; /*32px based on 16px = 1rem*/
@@ -388,7 +388,7 @@ body > div {
   height: 8rem; /*128px based on 16px = 1rem*/
   background: #1a4341; /* Dark teal for elephant ears */
   border-radius: 50%; /* Make it a circle for ears */
-  }
+}
 .shape-8 div:nth-child(1)::before,
 .shape-8 div:nth-child(3)::before {
   /* targeting first and third div pseudo-elements for inner elephant ears */
@@ -399,7 +399,6 @@ body > div {
   border-radius: 50%; /* Make it a circle for inner ears */
   position: absolute; /* Position absolutely within the parent div */
   right: 0; /* Align inner ears circle to right */
-  
 }
 .shape-8 div:nth-child(3)::before {
   /* targeting third div pseudo-element for inner elephant ear */
@@ -417,10 +416,12 @@ body > div {
   border-radius: 2rem 2rem 0 0; /* Rounded top-left and bottom-left corners 32px based on 16px = 1rem */
 }
 /* --------------------- Mountain top gallery shape-9 ------------------------ */
-.shape-9 { /* ninth shape container to targeting the background of main div */
+.shape-9 {
+  /* ninth shape container to targeting the background of main div */
   background-color: #293462; /* Dark blue for ninth shape container */
 }
-.shape-9 span { /* targeting span inside shape-9 for mountain top gallery */
+.shape-9 span {
+  /* targeting span inside shape-9 for mountain top gallery */
   width: 12rem; /*192px based on 16px = 1rem*/
   height: 12rem; /*192px based on 16px = 1rem*/
   background: #fff1c1; /* Light yellow for mountain top gallery */
@@ -428,7 +429,7 @@ body > div {
   position: relative; /* Position relative for absolute positioning of child spans */
   overflow: hidden; /* Hide any overflow from child elements */
 }
-.shape-9 span::before{
+.shape-9 span::before {
   content: ''; /* Empty content for pseudo-element */
   width: 6rem; /*96px based on 16px = 1rem*/
   height: 6rem; /*96px based on 16px = 1rem*/
@@ -438,8 +439,8 @@ body > div {
   transform: rotate(45deg); /* Rotate by 45 degrees */
 }
 
-.shape-9 span::after{
-  content: " "; /* Empty content for pseudo-element */
+.shape-9 span::after {
+  content: ' '; /* Empty content for pseudo-element */
   width: 9rem; /*144px based on 16px = 1rem*/
   height: 9rem; /*144px based on 16px = 1rem*/
   background: #fe5f55; /* Orange for mountain top gallery inner circle */
@@ -447,28 +448,30 @@ body > div {
   bottom: -3rem; /* Align Mountain top after parent span to bottom 48px = 1rem */
   right: -1rem; /* Align Mountain top after parent span to right 16px = 1rem */
   transform: rotate(45deg);
-
 }
 /* --------------------- Bee shape-10 ------------------------ */
-.shape-10 { /* targeting shape-10 class for Bee container */
+.shape-10 {
+  /* targeting shape-10 class for Bee container */
   background: #998235; /* Dark yellow for bee body */
   flex-direction: column; /* Arrange bee wings and body stripes vertically */
 }
-.shape-10 div { /* targeting divs inside shape-10 for Bee wings and body container */
+.shape-10 div {
+  /* targeting divs inside shape-10 for Bee wings and body container */
   width: 10rem; /*160px based on 16px = 1rem*/
   height: 5rem; /*80px based on 16px = 1rem*/
   display: flex; /* Use flexbox for layout */
 }
-.shape-10 div:first-child span { /* targeting spans inside first div of shape-10 for Bee wings */
+.shape-10 div:first-child span {
+  /* targeting spans inside first div of shape-10 for Bee wings */
   background: #ffffff; /* White for bee wings */
   width: 50%; /* 50% of the parent div width */
   height: 100%; /* 100% of the parent div height */
   border-radius: 50% 50% 50% 0; /* Rounded corners for bee wings */
 }
-.shape-10 div:first-child span:first-child{ /* targeting first span inside first div of shape-10 for First bee wing */
+.shape-10 div:first-child span:first-child {
+  /* targeting first span inside first div of shape-10 for First bee wing */
   border-radius: 50% 50% 0 50%; /* Rounded corners for first bee wing */
 }
-
 
 /* FOOTER */
 
