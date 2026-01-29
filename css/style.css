@@ -427,6 +427,15 @@ body > div {
   border-radius: 50%; /* Make it a circle for mountain top gallery */
   position: relative; /* Position relative for absolute positioning of child spans */
 }
+.shape-9 span::before{
+  content: ''; /* Empty content for pseudo-element */
+  width: 6rem; /*96px based on 16px = 1rem*/
+  height: 6rem; /*96px based on 16px = 1rem*/
+  background: #fe5f55; /* Orange for mountain top gallery inner circle */
+  position: absolute; /* Position absolutely within the parent span */
+  bottom: -3rem; /* Align Mountain top before parent span to bottom 48px = 1rem */
+  transform: rotate(45deg); /* Rotate by 45 degrees */
+}
 
 /* FOOTER */
 
