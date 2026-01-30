@@ -512,14 +512,14 @@ body > div {
   padding: 0 0.8rem; /*12.8px based on 16px = 1rem padding left and right */
 }
 .shape-11 div:nth-child(2) span {
-  /* targeting spans inside second div of shape-11 for coffee mug side designs */
+  /* targeting spans inside second div of shape-11 for coffee mug side designs = stripes */
   background: #fe5f55; /* Orange for coffee mug side designs */
   width: 1.6rem; /*25.6px based on 16px = 1rem width of coffee mug side designs */
   height: 0.25rem; /*4px based on 16px = 1rem height of coffee mug side designs */
   border-radius: 0.3125rem; /*5px based on 16px = 1rem for coffee mug side designs */
 }
 .shape-11 div:nth-child(2) span:nth-child(1) {
-  /* targeting first span for first coffee mug side design */
+  /* targeting first span for first coffee mug side design = stripe */
   margin: 0.4rem 0; /*6.4px based on 16px = 1rem margin top and bottom for first coffee mug side design */
 }
 .shape-11 div:nth-child(2) span:nth-child(3) {
@@ -530,6 +530,14 @@ body > div {
   align-self: end; /* Align circle design to the end */
   margin-top: 0.7rem; /*11.2px based on 16px = 1rem margin top for circle design on coffee mug side */
   z-index: 1; /* Bring circle design to front */
+}
+.shape-11 div:nth-child(1),
+.shape-11 div:nth-child(3) {
+  /* targeting first and third div for coffee mug handles */
+  width: 3.5rem; /*56px based on 16px = 1rem width of coffee mug handles */
+  height: 2.2rem; /*35.2px based on 16px = 1rem height of coffee mug handles */
+  border: 0.3125rem solid #fff1c1; /* Light yellow border for coffee mug handles 5px based on 16px = 1rem */
+  margin-top: -1.8rem; /* Shift upwards by 28.8px based on 16px = 1rem to align coffee mug handles */
 }
 /* FOOTER */
 
