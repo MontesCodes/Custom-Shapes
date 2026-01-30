@@ -539,6 +539,17 @@ body > div {
   border: 0.3125rem solid #fff1c1; /* Light yellow border for coffee mug handles 5px based on 16px = 1rem */
   margin-top: -1.8rem; /* Shift upwards by 28.8px based on 16px = 1rem to align coffee mug handles */
 }
+.shape-11 div:nth-child(1) {
+  /* targeting first div for left coffee mug handle */
+  border-radius: 1rem 0 0 1rem; /* Rounded left coffee mug handle corners 16px based on 16px = 1rem */
+  margin-right: -1rem; /* Shift leftwards by 16px based on 16px = 1rem to align left coffee mug handle */
+}
+.shape-11 div:nth-child(3) {
+  /* targeting third div for right coffee mug handle */
+  border-radius: 0 1rem 1rem 0; /* Rounded right coffee mug handle corners 16px based on 16px = 1rem */
+  margin-left: -1rem; /* Shift rightwards by 16px based on 16px = 1rem to align right coffee mug handle */
+}
+
 /* FOOTER */
 
 /* FORMS */
