@@ -481,9 +481,18 @@ body > div {
   overflow: hidden; /* Hide overflow to Bee stripes from the span elements */
 }
 .shape-10 div:last-child span {
+  /* targeting spans inside last div of shape-10 for Bee body stripes */
   background: #000000; /* Black for bee body stripes */
   height: 100%; /* Full height of the parent div */
   width: 1.8rem; /* 28.8px based on 16px = 1rem width of each bee stripe */
+}
+.shape-10 div:last-child span:last-child {
+  /* targeting last span inside last div of shape-10 to create the Bee eye */
+  width: 1.3rem; /*20.8px based on 16px = 1rem width of bee eye */
+  height: 1.3rem; /*20.8px based on 16px = 1rem height of bee eye */
+  border-radius: 50%; /* Make it a circle for bee eye */
+  align-self: start; /* Align bee eye to the top */
+  margin: 0.8rem 1.3rem 0 0.5rem; /*16px top, 20.8px right, 0 bottom, 8px left based on 16px = 1rem to move the Bee eye */
 }
 
 /* FOOTER */
