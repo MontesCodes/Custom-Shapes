@@ -522,6 +522,15 @@ body > div {
   /* targeting first span for first coffee mug side design */
   margin: 0.4rem 0; /*6.4px based on 16px = 1rem margin top and bottom for first coffee mug side design */
 }
+.shape-11 div:nth-child(2) span:nth-child(3) {
+  /* targeting third span for third coffee mug side design = circle */
+  width: 1.2rem; /*19.2px based on 16px = 1rem width of circle design on coffee mug side */
+  height: 1.2rem; /*19.2px based on 16px = 1rem height of circle design on coffee mug side */
+  border-radius: 50%; /* Make it a circle for coffee mug side circle design */
+  align-self: end; /* Align circle design to the end */
+  margin-top: 0.7rem; /*11.2px based on 16px = 1rem margin top for circle design on coffee mug side */
+  z-index: 1; /* Bring circle design to front */
+}
 /* FOOTER */
 
 /* FORMS */
