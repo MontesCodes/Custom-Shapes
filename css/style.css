@@ -511,6 +511,17 @@ body > div {
   justify-content: start; /* Align side designs to the top */
   padding: 0 0.8rem; /*12.8px based on 16px = 1rem padding left and right */
 }
+.shape-11 div:nth-child(2) span {
+  /* targeting spans inside second div of shape-11 for coffee mug side designs */
+  background: #fe5f55; /* Orange for coffee mug side designs */
+  width: 1.6rem; /*25.6px based on 16px = 1rem width of coffee mug side designs */
+  height: 0.25rem; /*4px based on 16px = 1rem height of coffee mug side designs */
+  border-radius: 0.3125rem; /*5px based on 16px = 1rem for coffee mug side designs */
+}
+.shape-11 div:nth-child(2) span:nth-child(1) {
+  /* targeting first span for first coffee mug side design */
+  margin: 0.4rem 0; /*6.4px based on 16px = 1rem margin top and bottom for first coffee mug side design */
+}
 /* FOOTER */
 
 /* FORMS */
