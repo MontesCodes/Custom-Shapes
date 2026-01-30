@@ -494,7 +494,22 @@ body > div {
   align-self: start; /* Align bee eye to the top */
   margin: 0.8rem 1.3rem 0 0.5rem; /*16px top, 20.8px right, 0 bottom, 8px left based on 16px = 1rem to move the Bee eye */
 }
-
+/* --------------------- Coffee Mug shape-11 ------------------------ */
+.shape-11 {
+  /* targeting shape-11 class for coffee mug container */
+  background: #293462; /* Dark blue for coffee mug container */
+}
+.shape-11 div:nth-child(2) {
+  background: #fff1c1; /* Light yellow for coffee mug body */
+  width: 6rem; /*96px based on 16px = 1rem width of coffee mug body */
+  height: 4rem; /*64px based on 16px = 1rem height of coffee mug body */
+  border-radius: 0 0 2rem 2rem; /* Rounded bottom corners of coffee mug body 32px based on 16px = 1rem */
+  display: flex; /* Use Flexbox for centering */
+  flex-direction: column; /* Stack side designs vertically */
+  align-items: flex-start; /* Align side designs to the start */
+  justify-content: start; /* Align side designs to the top */
+  padding: 0 0.8rem; /*12.8px based on 16px = 1rem padding left and right */
+}
 /* FOOTER */
 
 /* FORMS */
