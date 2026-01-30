@@ -549,6 +549,12 @@ body > div {
   border-radius: 0 1rem 1rem 0; /* Rounded right coffee mug handle corners 16px based on 16px = 1rem */
   margin-left: -1rem; /* Shift rightwards by 16px based on 16px = 1rem to align right coffee mug handle */
 }
+/* --------------------- house shape-12 ------------------------ */
+.shape-12 {
+  /* targeting shape-12 class for house container */
+  background: #6593cf; /* Light blue for house container */
+  flex-direction: column; /* Stack house roof and body vertically */
+}
 
 /* FOOTER */
 
