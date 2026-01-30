@@ -472,6 +472,19 @@ body > div {
   /* targeting first span inside first div of shape-10 for First bee wing */
   border-radius: 50% 50% 0 50%; /* Rounded corners for first bee wing */
 }
+.shape-10 div:last-child {
+  /* targeting last div inside shape-10 for Bee body stripes container */
+  background: #eff33c; /* Yellow for bee body stripe */
+  border-radius: 3rem; /*48px based on 16px = 1rem*/
+  gap: 0.4rem; /*6.4px based on 16px = 1rem between each Bee stripe */
+  justify-content: start; /* Align bee stripes to the start */
+  overflow: hidden; /* Hide overflow to Bee stripes from the span elements */
+}
+.shape-10 div:last-child span {
+  background: #000000; /* Black for bee body stripes */
+  height: 100%; /* Full height of the parent div */
+  width: 1.8rem; /* 28.8px based on 16px = 1rem width of each bee stripe */
+}
 
 /* FOOTER */
 
