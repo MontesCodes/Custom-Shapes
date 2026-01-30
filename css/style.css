@@ -500,6 +500,7 @@ body > div {
   background: #293462; /* Dark blue for coffee mug container */
 }
 .shape-11 div:nth-child(2) {
+  /* targeting second div for coffee mug body */
   background: #fff1c1; /* Light yellow for coffee mug body */
   width: 6rem; /*96px based on 16px = 1rem width of coffee mug body */
   height: 4rem; /*64px based on 16px = 1rem height of coffee mug body */
