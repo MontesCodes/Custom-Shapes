@@ -555,6 +555,24 @@ body > div {
   background: #6593cf; /* Light blue for house container */
   flex-direction: column; /* Stack house roof and body vertically */
 }
+.shape-12 span:first-child {
+  /* targeting first span for house roof */
+  width: 10rem; /*160px based on 16px = 1rem width of house roof */
+  height: 10rem; /*160px based on 16px = 1rem height of house roof */
+  border-left: 7rem solid transparent; /* Transparent left border for house roof 112px based on 16px = 1rem */
+  border-right: 7rem solid transparent; /* Transparent right border for house roof 112px based on 16px = 1rem */
+  border-bottom: 5rem solid #243d83; /* Dark blue bottom border for house roof 80px based on 16px = 1rem */
+}
+.shape-12 span:first-child::before {
+  /* targeting first span pseudo-element for house roof front window */
+  content: ''; /* Empty content for pseudo-element */
+  width: 5rem; /*80px based on 16px = 1rem width of house roof front window */
+  height: 0.375rem; /*6px based on 16px = 1rem height of house roof front window */
+  background: #eeb850; /* Yellow for house roof front window */
+  position: absolute; /* Position absolutely within the parent span */
+  bottom: 0; /* Align to bottom */
+  left: calc(50% - 2.5rem); /* Center horizontally 40px */
+}
 
 /* FOOTER */
 
