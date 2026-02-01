@@ -651,3 +651,10 @@ body > div {
   row-gap: 0.3rem; /*4.8px based on 16px = 1rem gap between guitar tuning pegs rows */
   padding: 0.4rem; /*6.4px based on 16px = 1rem padding for guitar headstock */
 }
+.shape-13 div:nth-child(4) span {
+  /* targeting spans inside fourth div of shape-13 for guitar tuning pegs */
+  width: 100%; /* Full width of the parent div for guitar tuning pegs */
+  height: 0.4rem; /*6.4px based on 16px = 1rem height of guitar tuning pegs */
+  background: #1a4341; /* Dark teal for guitar tuning pegs */
+  border-radius: 0.2rem; /*3.2px based on 16px = 1rem for guitar tuning pegs */
+}
