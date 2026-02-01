@@ -703,3 +703,26 @@ body > div {
   right: -5rem; /* Shift rightwards by 80px based on 16px = 1rem to align the right mountain */
   border-radius: 50%; /* Make it a circle for the right mountain */
 }
+/* --------------------- leafless tree shape-15 ------------------------ */
+.shape-15 {
+  /* targeting shape-15 class for leafless tree container */
+  background: #1a4341; /* dark teal for leafless tree container */
+  overflow: hidden; /* Hide overflow to tree branches shape */
+}
+.shape-15 span:first-child {
+  /* targeting first span for tree top branches */
+  width: 5rem; /*80px based on 16px = 1rem width of tree top branches */
+  height: 6rem; /*96px based on 16px = 1rem height of tree top branches */
+  border: 1rem solid #998235; /* Dark yellow border for tree top branches 16px based on 16px = 1rem */
+  position: absolute; /* Position absolutely within the parent div */
+  top: -1rem; /* Shift upwards by 16px based on 16px = 1rem to align tree top branches */
+}
+.shape-15 span:first-child::before {
+  /* targeting first span pseudo-element for tree trunk */
+  content: ''; /* Empty content for pseudo-element */
+  display: block; /* Display as block */
+  width: 1rem; /*16px based on 16px = 1rem width of tree trunk  */
+  height: 17rem; /*272px based on 16px = 1rem height of tree trunk  */
+  background: #dda13d; /* Light yellow for tree trunk  */
+  margin-left: 1rem; /*16px based on 16px = 1rem to align tree trunk  */
+}
