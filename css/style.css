@@ -726,3 +726,21 @@ body > div {
   background: #dda13d; /* Light yellow for tree trunk  */
   margin-left: 1rem; /*16px based on 16px = 1rem to align tree trunk  */
 }
+.shape-15 span:last-child {
+  /* targeting last span for tree middle branches */
+  width: 9rem; /*144px based on 16px = 1rem width of tree middle branches */
+  height: 8rem; /*128px based on 16px = 1rem height of tree middle branches */
+  border: 1rem solid #dda13d; /* Light yellow border for tree middle branches 16px based on 16px = 1rem */
+  position: absolute; /* Position absolutely within the parent div */
+  top: -1rem; /*16px based on 16px = 1rem to align tree middle branches */
+}
+.shape-15 span:last-child::before {
+  /* targeting last span pseudo-element for tree lower trunk branch */
+  content: ''; /* Empty content for pseudo-element */
+  width: 9rem; /*144px based on 16px = 1rem width of tree lower trunk branch */
+  height: 1rem; /*16px based on 16px = 1rem height of tree lower trunk branch */
+  background: #998235; /* Dark yellow for tree lower trunk branch */
+  position: absolute; /* Position absolutely within the parent div */
+  bottom: -3rem; /* Shift downwards by 48px based on 16px = 1rem to align tree lower trunk branch */
+  left: -1rem; /* Shift leftwards by 16px based on 16px = 1rem to align tree lower trunk branch */
+}
