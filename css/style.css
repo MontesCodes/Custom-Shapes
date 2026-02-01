@@ -615,6 +615,31 @@ body > div {
   left: 2rem; /*32px based on 16px = 1rem from left */
   border-radius: 0.25rem; /*4px based on 16px = 1rem for guitar strings */
 }
+.shape-13 div:nth-child(2) {
+  /* targeting second div for guitar body towards neck */
+  width: 4.5rem; /*72px based on 16px = 1rem width of guitar body towards neck */
+  height: 4.5rem; /*72px based on 16px = 1rem height of guitar body towards neck */
+  border-radius: 50%; /* Make it a circle for guitar body towards neck */
+  margin-left: -2.5rem; /* Shift leftwards by 40px based on 16px = 1rem to align guitar body towards neck */
+  z-index: 1; /* Bring guitar body towards neck to front */
+  display: grid; /* use Css Grid layout to position guitar body towards neck strings */
+  place-items: center; /* Center guitar body towards neck strings */
+}
+.shape-13 div:nth-child(2) span {
+  /* targeting span inside second div of shape-13 for guitar hole towards neck */
+  width: 2.2rem; /*35.2px based on 16px = 1rem width of guitar body towards neck */
+  height: 2.2rem; /*35.2px based on 16px = 1rem height of guitar body towards neck */
+  background: #1a4341; /* Dark teal for guitar body towards neck */
+  border-radius: 50%; /* Make it a circle for guitar hole towards neck */
+  border: 0.25rem solid #f2ad43; /* Light yellow border for guitar hole towards neck 4px based on 16px = 1rem */
+}
+.shape-13 div:nth-child(3) {
+  /* targeting third div for guitar neck */
+  width: 6rem; /*96px based on 16px = 1rem width of guitar neck */
+  height: 1rem; /*16px based on 16px = 1rem height of guitar neck */
+  background: #1a4341; /* Dark teal for guitar neck */
+  margin-left: -0.4rem; /* Shift leftwards by 6.4px based on 16px = 1rem to align guitar neck */
+}
 /* FOOTER */
 
 /* FORMS */
