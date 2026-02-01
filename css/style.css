@@ -604,6 +604,7 @@ body > div {
   width: 8rem; /*96px based on 16px = 1rem width of guitar body */
   height: 8rem; /*96px based on 16px = 1rem height of guitar body */
   border-radius: 50%; /* Make it a circle for guitar body */
+  position: relative; /* Position relative for absolute positioning of child span */
 }
 .shape-13 div:first-child span {
   /* targeting span inside first div of shape-13 for guitar sound hole */
