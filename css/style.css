@@ -672,3 +672,13 @@ body > div {
   border-radius: 4rem 4rem 1rem 1rem; /* Rounded top corners 64px based on 16px = 1rem, bottom corners 16px based on 16px = 1rem */
   position: relative; /* Position relative for absolute positioning of child spans */
 }
+.shape-14 div span:nth-child(1) {
+  /* targeting first span for sun */
+  width: 2rem; /*32px based on 16px = 1rem width of sun */
+  height: 2rem; /*32px based on 16px = 1rem height of sun */
+  border-radius: 50%; /* Make it a circle for sun */
+  background: #fff58f; /* Light yellow for sun */
+  position: absolute; /* Position absolutely within the parent div */
+  top: calc(50% - 1rem); /* Center vertically 16px based on 16px = 1rem */
+  left: calc(50% - 1rem); /* Center horizontally 16px based on 16px = 1rem */
+}
