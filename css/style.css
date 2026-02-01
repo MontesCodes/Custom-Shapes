@@ -671,6 +671,7 @@ body > div {
   background: #f2ad43; /* Light yellow for window to sunset and mountains */
   border-radius: 4rem 4rem 1rem 1rem; /* Rounded top corners 64px based on 16px = 1rem, bottom corners 16px based on 16px = 1rem */
   position: relative; /* Position relative for absolute positioning of child spans */
+  overflow: hidden; /* Hide overflow to maintain shape */
 }
 .shape-14 div span:nth-child(1) {
   /* targeting first span for sun */
@@ -681,4 +682,24 @@ body > div {
   position: absolute; /* Position absolutely within the parent div */
   top: calc(50% - 1rem); /* Center vertically 16px based on 16px = 1rem */
   left: calc(50% - 1rem); /* Center horizontally 16px based on 16px = 1rem */
+}
+.shape-14 div span:nth-child(2) {
+  /* targeting second span for the left mountain */
+  width: 8rem; /*128px based on 16px = 1rem width of the left mountain */
+  height: 8rem; /*128px based on 16px = 1rem height of the left mountain */
+  background: #e08027; /* Orange for the left mountain */
+  position: absolute; /* Position absolutely within the parent div */
+  bottom: -3rem; /* Shift downwards by 48px based on 16px = 1rem to align the left mountain */
+  left: -3rem; /* Shift leftwards by 48px based on 16px = 1rem to align the left mountain */
+  border-radius: 50%; /* Make it a circle for the left mountain */
+}
+.shape-14 div span:nth-child(3) {
+  /* targeting third span for the right mountain */
+  width: 10rem; /*160px based on 16px = 1rem width of the right mountain */
+  height: 160px; /*160px based on 16px = 1rem height of the right mountain */
+  background-color: #824b20; /* Dark orange for the right mountain */
+  position: absolute; /* Position absolutely within the parent div */
+  bottom: -4.5rem; /* Shift downwards by 72px based on 16px = 1rem to align the right mountain */
+  right: -5rem; /* Shift rightwards by 80px based on 16px = 1rem to align the right mountain */
+  border-radius: 50%; /* Make it a circle for the right mountain */
 }
