@@ -601,8 +601,8 @@ body > div {
 }
 .shape-13 div:first-child {
   /* targeting first div for guitar neck */
-  width: 6rem; /*96px based on 16px = 1rem width of guitar body */
-  height: 6rem; /*96px based on 16px = 1rem height of guitar body */
+  width: 8rem; /*96px based on 16px = 1rem width of guitar body */
+  height: 8rem; /*96px based on 16px = 1rem height of guitar body */
   border-radius: 50%; /* Make it a circle for guitar body */
 }
 .shape-13 div:first-child span {
@@ -617,8 +617,8 @@ body > div {
 }
 .shape-13 div:nth-child(2) {
   /* targeting second div for guitar body towards neck */
-  width: 4.5rem; /*72px based on 16px = 1rem width of guitar body towards neck */
-  height: 4.5rem; /*72px based on 16px = 1rem height of guitar body towards neck */
+  width: 6.5rem; /*72px based on 16px = 1rem width of guitar body towards neck */
+  height: 6.5rem; /*72px based on 16px = 1rem height of guitar body towards neck */
   border-radius: 50%; /* Make it a circle for guitar body towards neck */
   margin-left: -2.5rem; /* Shift leftwards by 40px based on 16px = 1rem to align guitar body towards neck */
   z-index: 1; /* Bring guitar body towards neck to front */
@@ -635,13 +635,19 @@ body > div {
 }
 .shape-13 div:nth-child(3) {
   /* targeting third div for guitar neck */
-  width: 6rem; /*96px based on 16px = 1rem width of guitar neck */
+  width: 10rem; /*120px based on 16px = 1rem width of guitar neck */
   height: 1rem; /*16px based on 16px = 1rem height of guitar neck */
   background: #1a4341; /* Dark teal for guitar neck */
   margin-left: -0.4rem; /* Shift leftwards by 6.4px based on 16px = 1rem to align guitar neck */
 }
-/* FOOTER */
-
-/* FORMS */
-
-/* GENERAL GUBBINS */
+.shape-13 div:nth-child(4) {
+  /* targeting fourth div for guitar headstock */
+  width: 2.2rem; /*35.2px based on 16px = 1rem width of guitar headstock */
+  height: 1.6rem; /*25.6px based on 16px = 1rem height of guitar headstock */
+  border-radius: 0.5rem; /*8px based on 16px = 1rem for guitar headstock */
+  margin-left: -0.4rem; /* Shift leftwards by 6.4px based on 16px = 1rem to align guitar headstock */
+  display: flex; /* Use Flexbox for centering guitar tuning pegs */
+  flex-direction: column; /* Stack guitar tuning pegs vertically */
+  row-gap: 0.3rem; /*4.8px based on 16px = 1rem gap between guitar tuning pegs rows */
+  padding: 0.4rem; /*6.4px based on 16px = 1rem padding for guitar headstock */
+}
