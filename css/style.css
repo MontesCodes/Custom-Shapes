@@ -590,7 +590,31 @@ body > div {
   bottom: 0; /* Align to bottom */
   left: calc(50% - 1.5rem); /* Center horizontally 24px */
 }
-
+/* --------------------- Guitar shape-13 ------------------------ */
+.shape-13 {
+  /* targeting shape-13 class for guitar container */
+  background: #f3ac3c; /* Light yellow for guitar container */
+}
+.shape-13 div {
+  /* targeting div inside shape-13 for guitar body and neck */
+  background: #998235; /* Dark yellow for guitar body and neck */
+}
+.shape-13 div:first-child {
+  /* targeting first div for guitar neck */
+  width: 6rem; /*96px based on 16px = 1rem width of guitar body */
+  height: 6rem; /*96px based on 16px = 1rem height of guitar body */
+  border-radius: 50%; /* Make it a circle for guitar body */
+}
+.shape-13 div:first-child span {
+  /* targeting span inside first div of shape-13 for guitar sound hole */
+  width: 0.375rem; /*6px based on 16px = 1rem width of guitar strings */
+  height: 2rem; /*32px based on 16px = 1rem height of guitar strings */
+  background: #1a4341; /* Dark teal for guitar strings */
+  position: absolute; /* Position absolutely within the parent div */
+  top: calc(50% - 1rem); /* Center vertically 16px based on 16px = 1rem */
+  left: 2rem; /*32px based on 16px = 1rem from left */
+  border-radius: 0.25rem; /*4px based on 16px = 1rem for guitar strings */
+}
 /* FOOTER */
 
 /* FORMS */
