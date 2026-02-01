@@ -574,10 +574,21 @@ body > div {
   left: calc(50% - 2.5rem); /* Center horizontally 40px */
 }
 .shape-12 span:last-child {
+  /* targeting last span for house body */
   width: 10rem; /*160px based on 16px = 1rem width of house body */
   height: 8rem; /*128px based on 16px = 1rem height of house body */
   background: #243d83; /* Dark blue for house body */
   position: relative; /* Position relative for absolute positioning of child spans */
+}
+.shape-12 span:last-child::after {
+  /* targeting last span pseudo-element for house body door */
+  content: ''; /* Empty content for pseudo-element */
+  width: 3rem; /*48px based on 16px = 1rem width of house body door */
+  height: 4rem; /*64px based on 16px = 1rem height of house body door */
+  background: #eeb850; /* Yellow for house body door */
+  position: absolute; /* Position absolutely within the parent span */
+  bottom: 0; /* Align to bottom */
+  left: calc(50% - 1.5rem); /* Center horizontally 24px */
 }
 
 /* FOOTER */
