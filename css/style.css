@@ -24,6 +24,7 @@ body > div {
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   background: #333; /* Dark background for shape containers */
+  min-height: 20rem; /* Minimum height for shape containers 320px based on 16px = 1rem */
 }
 
 /* CONTENT */
