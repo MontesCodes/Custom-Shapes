@@ -573,6 +573,12 @@ body > div {
   bottom: 0; /* Align to bottom */
   left: calc(50% - 2.5rem); /* Center horizontally 40px */
 }
+.shape-12 span:last-child {
+  width: 10rem; /*160px based on 16px = 1rem width of house body */
+  height: 8rem; /*128px based on 16px = 1rem height of house body */
+  background: #243d83; /* Dark blue for house body */
+  position: relative; /* Position relative for absolute positioning of child spans */
+}
 
 /* FOOTER */
 
