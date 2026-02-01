@@ -659,3 +659,16 @@ body > div {
   background: #1a4341; /* Dark teal for guitar tuning pegs */
   border-radius: 0.2rem; /*3.2px based on 16px = 1rem for guitar tuning pegs */
 }
+/* --------------------- Window to Sunset and Mountains shape-14 ------------------------ */
+.shape-14 {
+  /* targeting shape-14 class for window to sunset and mountains container */
+  background: #191919; /* Dark gray for window to sunset and mountains container */
+}
+.shape-14 div {
+  /* targeting div inside shape-14 for window to sunset and mountains */
+  width: 7rem; /*112px based on 16px = 1rem width of window to sunset and mountains */
+  height: 10rem; /*160px based on 16px = 1rem height of window to sunset and mountains */
+  background: #f2ad43; /* Light yellow for window to sunset and mountains */
+  border-radius: 4rem 4rem 1rem 1rem; /* Rounded top corners 64px based on 16px = 1rem, bottom corners 16px based on 16px = 1rem */
+  position: relative; /* Position relative for absolute positioning of child spans */
+}
